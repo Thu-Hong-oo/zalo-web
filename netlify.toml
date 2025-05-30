@@ -1,3 +1,11 @@
 [build]
   command = "CI=false npm run build"
-  publish = "build" 
+  publish = "build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "http://ec2-54-255-209-87.ap-southeast-1.compute.amazonaws.com"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS, PUT, DELETE"
+    Access-Control-Allow-Headers = "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization"
+    Access-Control-Allow-Credentials = "true" 

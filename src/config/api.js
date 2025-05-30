@@ -1,14 +1,10 @@
 import axios from "axios";
 
 // Cấu hình API
-
-
 const COMPUTER_IP = "ec2-54-255-209-87.ap-southeast-1.compute.amazonaws.com";
 
-
-
-const BASE_URL = `https://${COMPUTER_IP}:3000`;
-
+// Sử dụng domain EC2
+const BASE_URL = `http://${COMPUTER_IP}`;
 const API_URL = `${BASE_URL}/api`;
 const SOCKET_URL = BASE_URL;
 
