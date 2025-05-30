@@ -42,7 +42,7 @@ import api, { getBaseUrl, getApiUrl } from "../config/api";
 import "./css/ChatDirectly.css";
 import MessageContextMenu from "./MessageContextMenu";
 import ForwardMessageModal from "./ForwardMessageModal";
-import ConfirmModal from "../../../Web/src/components/ConfirmModal";
+import ConfirmModal from "../components/ConfirmModal";
 import { SocketContext } from "../App";
 import VideoCall from './VideoCall';
 import CallMessage from './CallMessage';
