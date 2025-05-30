@@ -3,7 +3,7 @@ import axios from "axios";
 // Cấu hình API
 
 
-const COMPUTER_IP = "172.20.32.89";
+const COMPUTER_IP = "ec2-54-255-209-87.ap-southeast-1.compute.amazonaws.com";
 
 
 
