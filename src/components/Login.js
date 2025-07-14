@@ -9,7 +9,7 @@ import api, { getBaseUrl, getApiUrl } from "../config/api";
 export default function Login({ setIsAuthenticated }) {
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState("phone")
-  const [phoneNumber, setPhoneNumber] = useState("0123456789")
+  const [phoneNumber, setPhoneNumber] = useState("123456789")
   const [password, setPassword] = useState("123456")
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
