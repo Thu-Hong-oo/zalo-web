@@ -26,7 +26,8 @@ import { updateGroup, updateGroupMembers, removeGroup } from './redux/slices/gro
 import { setUser, updateUserAvatar, updateUserProfile, updateUserStatus } from './redux/slices/userSlice';
 import { io } from "socket.io-client";
 import { getSocketUrl } from "./config/api";
-import Login from "./components/Login"
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 import ChatDirectly from "./components/ChatDirectly"
 import GroupChat from "./components/GroupChat"
 import FriendList from "./components/FriendList";
@@ -342,21 +343,7 @@ function MainApp({ setIsAuthenticated }) {
               >
                 <User size={24} />
               </button>
-              <button className="nav-item">
-                <FileText size={24} />
-              </button>
-              <button className="nav-item">
-                <Cloud size={24} />
-              </button>
-              <button className="nav-item">
-                <CheckSquare size={24} />
-              </button>
-              <button className="nav-item">
-                <Database size={24} />
-              </button>
-              <button className="nav-item">
-                <Briefcase size={24} />
-              </button>
+         
             </div>
           </div>
           <div className="sidebar-bottom">
@@ -556,6 +543,16 @@ function App() {
             )
           }
         />
+        <Route
+  path="/signup"
+  element={
+    !isAuthenticated ? (
+      <SignUp setIsAuthenticated={setIsAuthenticated} />
+    ) : (
+      <Navigate to="/app" replace />
+    )
+  }
+/>
         <Route
           path="/app/*"
           element={

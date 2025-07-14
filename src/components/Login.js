@@ -333,6 +333,7 @@ export default function Login({ setIsAuthenticated }) {
               color: "#0068FF",
               textDecoration: "none"
             }}
+            onClick={() => navigate("/signup")}
           >
             Đăng ký ngay!
           </a>
